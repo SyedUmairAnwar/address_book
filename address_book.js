@@ -66,6 +66,7 @@ let personArray = new Array()
 personArray.push(new AddessBook("syed", "Awar", "bhubneshwar", "odisha", 724111, 8908922336, "abc@gmail.com"))
 personArray.push(new AddessBook("abx", "chf", "cuttack", "odisha", 754221, 8908922336, "hdhf@gmail.com"))
 personArray.push(new AddessBook("amil", "akshjay", "patna", "bihar", 123456, 1234567890, "mddk@gmail.com"))
+personArray.push(new AddessBook("umair","anwar","puri","odisha",754221,9040106213,"anwair@Spykee.com"))
 console.log("the array is ", personArray)
 let index = personArray.findIndex(contact => contact.phonenno == 1234567890)
 console.log(index)
@@ -95,4 +96,11 @@ console.log("First name is ",personF," last name is ",personL)
 //uc9
 let view_person=personArray.filter((book)=>book.state=="odisha").reduce((total,book)=>book.firstName+" "+book.lastName,0)
 console.log(view_person)
-
+//uc10
+let no_of_state=personArray.filter((book)=>book.state=="odisha").length
+console.log("No of per son from odisha",no_of_state)
+//uc11 sorting by person name
+for(let book in personArray){
+    personArray.sort(book.firstName)
+}
+personArray.forEach((count)=>console.log(count.toString()))
