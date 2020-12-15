@@ -92,3 +92,7 @@ let search_person=personArray.findIndex(search=>search.city=="patna")
 let personF=personArray[search_person].firstName
 let personL=personArray[search_person].lastName
 console.log("First name is ",personF," last name is ",personL)
+//uc9
+let view_person=personArray.filter((book)=>book.state=="odisha").reduce((total,book)=>book.firstName+" "+book.lastName,0)
+console.log(view_person)
+
