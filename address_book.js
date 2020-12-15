@@ -57,7 +57,7 @@ class AddessBook {
     }
     get() { return this._email }
     toString() {
-        return "First Name " + this.firstName + " last name " + this.lastName + " city " + this.city + " state " + this.state + " pincode " + this.pincode + " phone no " + this.phonenno + " email " + this.email
+        return "\nFirst Name " + this.firstName + " last name " + this.lastName + " city " + this.city + " state " + this.state + " pincode " + this.pincode + " phone no " + this.phonenno + " email " + this.email
     }
 }
 let p1 = new AddessBook("syed", "umair", "bhubneshwar", "odisha", 754221, 8908922336, "umar101@gmail.com")
@@ -67,3 +67,7 @@ personArray.push(new AddessBook("syed","Awar","bhubneshwar","odisha",724111,8908
 personArray.push(new AddessBook("abx","chf","cuttack","odisha",754221,8908922336,"hdhf@gmail.com"))
 personArray.push(new AddessBook("amil","akshjay","patna","bihar",123456,1234567890,"mddk@gmail.com"))
 console.log("the array is ",personArray)
+let index=personArray.findIndex(contact =>contact.phonenno==1234567890)
+console.log(index)
+personArray[index].phonenno=7605902978
+console.log(personArray.toString())
