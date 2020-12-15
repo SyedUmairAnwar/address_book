@@ -87,3 +87,8 @@ function duplicate(count) {
 personArray.forEach((contact)=>duplicate(contact))
 if (dup_count==0)console.log("not a duplicate ")
 else console.log("Duplicate contact")
+//uc8
+let search_person=personArray.findIndex(search=>search.city=="patna")
+let personF=personArray[search_person].firstName
+let personL=personArray[search_person].lastName
+console.log("First name is ",personF," last name is ",personL)
