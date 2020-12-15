@@ -100,7 +100,24 @@ console.log(view_person)
 let no_of_state=personArray.filter((book)=>book.state=="odisha").length
 console.log("No of per son from odisha",no_of_state)
 //uc11 sorting by person name
+console.log("sorting on the basic of name\n")
 for(let book in personArray){
     personArray.sort(book.firstName)
+}
+personArray.forEach((count)=>console.log(count.toString()))
+//uc12 sorting by sort by city,state,pincode
+console.log("sorting on the basis of city \n")
+for(let book in personArray){
+    personArray.sort(book.city)
+}
+personArray.forEach((count)=>console.log(count.toString()))
+console.log("sorting on the basis of state\n")
+for(let book in personArray){
+    personArray.sort(book.state)
+}
+personArray.forEach((count)=>console.log(count.toString()))
+console.log("sorting on the basis of pincode\n")
+for(let book in personArray){
+    personArray.sort(book.pincode)
 }
 personArray.forEach((count)=>console.log(count.toString()))
