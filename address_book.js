@@ -77,3 +77,13 @@ personArray.splice(person_index, person_index)
 console.log(personArray.toString())
 let no_of_contact = personArray.length
 console.log("The no of contact is ", no_of_contact)
+//uc7
+let dup_count = 0
+function duplicate(count) {
+    if (count.firstName == "syed")
+        dup_count++
+    return dup_count
+}
+personArray.forEach((contact)=>duplicate(contact))
+if (dup_count==0)console.log("not a duplicate ")
+else console.log("Duplicate contact")
