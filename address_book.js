@@ -62,16 +62,18 @@ class AddessBook {
 }
 let p1 = new AddessBook("syed", "umair", "bhubneshwar", "odisha", 754221, 8908922336, "umar101@gmail.com")
 console.log(p1.toString())
-let personArray=new Array()
-personArray.push(new AddessBook("syed","Awar","bhubneshwar","odisha",724111,8908922336,"abc@gmail.com"))
-personArray.push(new AddessBook("abx","chf","cuttack","odisha",754221,8908922336,"hdhf@gmail.com"))
-personArray.push(new AddessBook("amil","akshjay","patna","bihar",123456,1234567890,"mddk@gmail.com"))
-console.log("the array is ",personArray)
-let index=personArray.findIndex(contact =>contact.phonenno==1234567890)
+let personArray = new Array()
+personArray.push(new AddessBook("syed", "Awar", "bhubneshwar", "odisha", 724111, 8908922336, "abc@gmail.com"))
+personArray.push(new AddessBook("abx", "chf", "cuttack", "odisha", 754221, 8908922336, "hdhf@gmail.com"))
+personArray.push(new AddessBook("amil", "akshjay", "patna", "bihar", 123456, 1234567890, "mddk@gmail.com"))
+console.log("the array is ", personArray)
+let index = personArray.findIndex(contact => contact.phonenno == 1234567890)
 console.log(index)
-personArray[index].phonenno=7605902978
+personArray[index].phonenno = 7605902978
 console.log(personArray.toString())
-let person_index=personArray.findIndex(contact=>contact.firstName=="abx")
+let person_index = personArray.findIndex(contact => contact.firstName == "abx")
 console.log(person_index)
-personArray.splice(person_index,person_index)
+personArray.splice(person_index, person_index)
 console.log(personArray.toString())
+let no_of_contact = personArray.length
+console.log("The no of contact is ", no_of_contact)
