@@ -71,3 +71,7 @@ let index=personArray.findIndex(contact =>contact.phonenno==1234567890)
 console.log(index)
 personArray[index].phonenno=7605902978
 console.log(personArray.toString())
+let person_index=personArray.findIndex(contact=>contact.firstName=="abx")
+console.log(person_index)
+personArray.splice(person_index,person_index)
+console.log(personArray.toString())
